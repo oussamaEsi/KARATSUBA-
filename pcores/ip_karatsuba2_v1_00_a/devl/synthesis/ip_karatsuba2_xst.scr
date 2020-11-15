@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "E:\Code_Doctorat_Virtex5\Projet_Karatsuba2\Simulation\pcores\ip_karatsuba2_v1_00_a\devl\synthesis\ip_karatsuba2_xst.prj"
+-top ip_karatsuba2
+-p virtex6
+-ofn "E:\Code_Doctorat_Virtex5\Projet_Karatsuba2\Simulation\pcores\ip_karatsuba2_v1_00_a\devl\synthesis\ip_karatsuba2_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib ip_karatsuba2_v1_00_a

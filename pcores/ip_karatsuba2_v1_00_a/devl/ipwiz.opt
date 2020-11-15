@@ -1,0 +1,10 @@
+-batch 
+-create ip_karatsuba2 
+-ver 1.00.a 
+-dir "E:\Code_Doctorat_Virtex5\Projet_Karatsuba2\Simulation" 
+-lang vhdl 
+-bus plbv46 s 
+-reg 3 
+-xps 
+-ise 
+-driver 

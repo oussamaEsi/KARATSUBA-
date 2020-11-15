@@ -1,0 +1,37 @@
+
+**** Build of configuration Debug for project karatsuba2 ****
+
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../karatsuba2_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.a -mno-xl-soft-mul -MMD -MP -MF"src/main.d" -MT"src/main.d" -o"src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:69: warning: implicit declaration of function 'Modular_Mc'
+../src/main.c:71: warning: implicit declaration of function 'Karatsuba2'
+../src/main.c:73: warning: control reaches end of non-void function
+Finished building: ../src/main.c
+' '
+Building target: karatsuba2.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../karatsuba2_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.a -mno-xl-soft-mul -o"karatsuba2.elf"  ./src/main.o ./src/montgomeyIP.o   
+Finished building target: karatsuba2.elf
+' '
+Invoking: MicroBlaze Print Size
+mb-size karatsuba2.elf  |tee "karatsuba2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2322	    296	   2350	   4968	   1368	karatsuba2.elf
+Finished building: karatsuba2.elf.size
+' '
+Invoking: Xilinx ELF Check
+elfcheck karatsuba2.elf -hw ../../Simulation_hw_platform/system.xml -pe microblaze_0  |tee "karatsuba2.elf.elfcheck"
+elfcheck
+Xilinx EDK 13.2 Build EDK_O.61xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Simulation_hw_platform/system.xml -pe
+microblaze_0 karatsuba2.elf 
+
+ELF file	: karatsuba2.elf
+elfcheck passed.
+Finished building: karatsuba2.elf.elfcheck
+' '

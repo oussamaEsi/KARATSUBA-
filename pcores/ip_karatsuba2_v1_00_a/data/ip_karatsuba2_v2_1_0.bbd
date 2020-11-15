@@ -1,0 +1,9 @@
+##############################################################################
+## Filename:          E:\Code_Doctorat_Virtex5\Projet_Karatsuba2\Simulation\pcores/ip_karatsuba2_v1_00_a/data/ip_karatsuba2_v2_1_0.bbd
+## Description:       Black Box Definition
+## Date:              Sun Feb 11 13:59:19 2018 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+Files
+################################################################################
+fifo_mem.ngc,mem_rom.ngc,mul1.ngc,mul2.ngc,single_port_m.ngc
